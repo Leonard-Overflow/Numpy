@@ -27,11 +27,20 @@ print(funcionarios.dtype)
 
 # novo_array = rfn.append_fields(base=funcionarios,
 #                                names=['salario','beneficios'],
-#                                data=[salarios, beneficios],
-#                                dtypes=['f4', 'bool'],
+#                                data=[np.array(salarios), np.array(beneficios)],
+#                                dtypes=[np.dtype('f4'), np.dtype('bool')],
+#                                fill_value=-1
 #                                usemask=False,
 #                                asrecarray=False)
 
-novo_array2 = rfn.append_fields(funcionarios, ['salario', 'beneficios'], [salarios, beneficios], ['f4', 'bool'], False, False)
+novo_array2 = rfn.append_fields(funcionarios, ['salario', 'beneficios'], [np.array(salarios), np.array(beneficios)], [np.dtype('f4'), np.dtype(bool)], -1, False, False)
 
 print(novo_array2.dtype)
+
+# base = Array que vai ser modificado
+# names = Nome dos novos campos da estrtura
+# data = Dados que vao ser inseridos nos campos de cada espaco existente no array original
+# dtype = Tipo de cada campo
+# fill_value = Insere um valor padrao caso nao exista valores pra preencher. -1 por padrao
+# usemask = Transforma em masked array
+# asrecarry = Transforma em recarray permitindo acessar os valores como attr. Ergonomia apenas

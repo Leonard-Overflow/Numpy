@@ -12,7 +12,7 @@ funcioario3 = ('Bianca', 31, 'marketing', 1)
 funcioario4 = ('Pedro', 25, 'engenharia', 1)
 funcioario5 = ('Kaua', 25, 'marketing', 0)
 funcioario6 = ('Fernando', 21, 'analise de dados', 1)
-lista_de_funcionarios = [funcionario1, funcioario2, funcioario3, funcioario4, funcioario5, funcioario6]
+lista_de_funcionarios = np.array([funcionario1, funcioario2, funcioario3, funcioario4, funcioario5, funcioario6])
 
 funcionarios = np.array(lista_de_funcionarios, dtype=dtype_proprio)
 print(funcionarios["nome"])
