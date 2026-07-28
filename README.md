@@ -1,4 +1,5 @@
 ![Python](https://img.shields.io/badge/Python-3.13-blue?logo=python)
+![NumPy](https://img.shields.io/badge/NumPy-2.5.1-013243?logo=numpy&logoColor=white)
 # Numpy
 ## Objetivo
 Esse repositório guarda meus aprendizados na biblioteca Numpy

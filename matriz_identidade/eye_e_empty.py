@@ -9,7 +9,6 @@ print("\n")
 print(identidade_olho)
 print("\n")
 
-
 # Com parametros de desolocamento
 matriz_deslocada = eye(3, 5, k=1) # positivo desloca para a direita e negativo para a esquerda
 print(matriz_deslocada)
