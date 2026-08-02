@@ -41,6 +41,6 @@ print(novo_array2.dtype)
 # names = Nome dos novos campos da estrtura
 # data = Dados que vao ser inseridos nos campos de cada espaco existente no array original
 # dtype = Tipo de cada campo
-# fill_value = Insere um valor padrao caso nao exista valores pra preencher. -1 por padrao
+# fill_value = Insere um valor padrao caso nao exista valores pra preencher. -1 por padrao.
 # usemask = Transforma em masked array
 # asrecarry = Transforma em recarray permitindo acessar os valores como attr. Ergonomia apenas
